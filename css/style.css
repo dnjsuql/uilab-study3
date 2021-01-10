@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+a { color:#000; text-decoration: none; }
+
+.contents-title { padding: 30px 0; border-bottom: 1px solid #000; font-size: 48px;}
+.contents { padding: 30px 0; }
+
+/* tab */
+.tab { border: 1px solid #ddd; border-left: none; background-color:#fff; overflow: hidden; }
+.tab__list { float: left; padding: 20px; border-left: 1px solid #ddd; width: 33.33%; text-align: center; box-sizing: border-box; cursor: pointer; }
+.tab__list.active { background-color: #eee; color: #f00; }
+.tab__contents { border: 1px solid #ddd; margin-top: 5px; }
+.tab__panel { height: 100px; line-height: 100px; background: #fff; text-align: center; display: none; }
+.tab__panel.active { display: block; }
+
+/* auto carousel */
+.carousel { margin: 30px auto 0; width: 900px; overflow: hidden; }
+.carousel-wrap { width: 2700px; font-size: 0; }
+.carousel-list { width: 900px; height: 300px; display: inline-block; position: relative; }
+.carousel-list span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #f00; font-size: 48px; }
+
+/* carousel */
+.hero { width: 100vw; height: 100vh; position: relative; }
+.hero__item { position: absolute; background-repeat: no-repeat; background-position: center center; background-size: cover; width: 100vw; height: 100vh; }
+.hero__link { position: absolute; bottom: 10%; right: 10%; font-size: 0; }
+.hero__bullet { margin-left: 20px; position: relative; font-size: 0; color: transparent; }
+.hero__bullet:first-child { margin-left: 0; }
+.hero__bullet::before { display: block; width: 4px; height: 4px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.5); cursor: pointer; transition: transform .5s ease,-webkit-transform .5s ease; content: ''; }
+.hero__link button::after { position: absolute; top: -3px; left: -3px; right: -3px; bottom: -3px; transform: scale(0); border: 2px solid #fff; border-radius: 50%; transition: transform .5s ease,-webkit-transform .5s ease; content: ''; }
+.hero__link button.on::before { transform: scale(0); }
+.hero__link button.on::after { transform: scale(1); }
+.title-text { position : absolute; font-weight: 600; font-size : 14px; color : white; margin-top : 2px; margin-left:10px; text-shadow : 3px 3px 5px black; }
+.link-contents { position: absolute; top : 24px; width:100%; padding : 9px 0px 0px 0px; /* height:95%; */ /* background : rgba(255, 255, 255, 0.8); */ }

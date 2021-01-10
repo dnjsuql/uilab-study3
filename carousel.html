@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carousel</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero__item" data-value="0" data-next="1" style="background-image: url(images/bg_hero_01.jpg)">
+      <h2 class="hero__text">테스트1</h4>
+    </div>
+    <div class="hero__item" data-value="1" data-next="2" style="background-image: url(images/bg_hero_02.jpg)">
+      <h2 class="hero__text">테스트2</h4>
+    </div>
+    <div class="hero__item" data-value="2" data-next="0" style="background-image: url(images/bg_hero_03.jpg)">
+      <h2 class="hero__text">테스트3</h4>
+    </div>
+    <div class="hero__link"></div>
+  </div>
+  <script src="script/carousel.js"></script>
+</body>
+</html>
